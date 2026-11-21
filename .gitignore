@@ -1,0 +1,11 @@
+data/
+logs/
+__pycache__/
+.pytest_cache/
+*.pyc
+*.npy
+*.npz
+*.pt
+.venv/
+venv/
+release-assets/

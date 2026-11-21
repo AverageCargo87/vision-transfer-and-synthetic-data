@@ -1,0 +1,71 @@
+{
+ "ensemble_gain_pp": 0.57,
+ "ensemble_gain_ci_pp": [
+  0.15,
+  0.95
+ ],
+ "throughput_cub": {
+  "JPEG files, 0 DataLoader workers": 135.6,
+  "JPEG files, 2 DataLoader workers": 251.6,
+  "JPEG files, 4 DataLoader workers": 271.9,
+  "JPEG files, 8 DataLoader workers": 272.8,
+  "RAM cache + GPU augmentation": 263.9
+ },
+ "throughput_gtsrb": {
+  "PPM files, 0 DataLoader workers": 120.3,
+  "PPM files, 2 DataLoader workers": 1568.8,
+  "PPM files, 4 DataLoader workers": 3039.0,
+  "PPM files, 8 DataLoader workers": 3015.1,
+  "RAM cache + GPU augmentation": 2892.1
+ },
+ "gtsrb": {
+  "oracle": {
+   "overall": 0.9888,
+   "seen": 0.9898,
+   "unseen": 0.9849,
+   "unseen_sd": 0.0,
+   "runs": 1
+  },
+  "real_seen_only": {
+   "overall": 0.7717,
+   "seen": 0.9904,
+   "unseen": 0.0,
+   "unseen_sd": 0.0,
+   "runs": 1
+  },
+  "synth_unseen_only": {
+   "overall": 0.8951,
+   "seen": 0.9902,
+   "unseen": 0.5595,
+   "unseen_sd": 0.0041,
+   "runs": 3
+  },
+  "synth_all": {
+   "overall": 0.9162,
+   "seen": 0.9892,
+   "unseen": 0.6588,
+   "unseen_sd": 0.01,
+   "runs": 3
+  },
+  "synth_all + knn": {
+   "overall": 0.925,
+   "seen": 0.9891,
+   "unseen": 0.6988,
+   "unseen_sd": 0.0211,
+   "runs": 3
+  }
+ },
+ "gtsrb_per_heldout_class": {
+  "condition": "synth_all + knn",
+  "turn left ahead": 0.9972,
+  "yield": 0.9778,
+  "speed limit 20": 0.9611,
+  "stop": 0.9309,
+  "no entry": 0.8898,
+  "no vehicles": 0.8809,
+  "keep left": 0.6333,
+  "end of all limits": 0.6111,
+  "speed limit 120": 0.2963,
+  "speed limit 60": 0.1881
+ }
+}
